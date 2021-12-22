@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.comments {
+  margin: 10px auto;
+  max-width: 600px;
+  min-width: 320px;
+  width: 100%;
+  font-size: 1.2rem;
+
+  &__list {
+    position: relative;
+    background-color: #eee;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #dcdcdc;
+  }
+
+  &__content {
+    div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__reply {
+    margin-left: 40px;
+  }
+
+  &__image {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__author {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__text {
+    display: inline-block;
+  }
+
+  &__like-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__like-btn {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    transition: transform 0.1s;
+
+    &:active {
+      background-color: darken(red, 4%);
+      transform: scale(0.97);
+    }
+  }
+
+  &__line {
+    position: absolute;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    background-color: rgb(160, 160, 160);
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      padding: 0 4px;
+      background-color: rgb(100, 100, 100);
+    }
+  }
+}
