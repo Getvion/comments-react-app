@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import Comment from './components/Comment';
+import Comments from './components/Comments';
 
 import './index.scss';
 import DB from './DB.json';
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className='app'>
       <div className='comments'>
-        <Comment level={level + 1} comments={comments} />
+        <Comments level={level + 1} comments={comments} />
       </div>
     </div>
   );
